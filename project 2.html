@@ -1,0 +1,66 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+     <meta charset="utf-8">
+        <meta name="keywords" content="pro2, plapla" >
+        <meta name="description" content="it is a forgin project by zagazij friend">
+        <title>web-with-dark-mode</title>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/project 2.css">
+</head>
+<body>
+   <!--header-->
+   <header>
+    <div class="container">
+<div class="header-content">
+<img src="imgpro1/4-130x87.png" alt="logo">
+
+<nav>
+<ul class="list-unstyled">
+<li class=" dropdown"> <a class="  link-item" href="#">furntiure</a>
+<div class="dropdown-menu">
+<ul class="list-unstyled">
+<li><a href="#"> table1</a></li>
+<li><a href="#"> table2</a></li>
+<li><a href="#"> table3</a></li>
+<li><a href="#"> table4</a></li>
+<li><a href="#"> table5</a></li>
+</ul>
+</div>
+</li>
+<li><a class="link-item" href="#">armories</a></li>
+<li><a class="link-item" href="#">study table</a></li>
+</ul>
+</nav><!--/nav-->
+<div class="login">
+<ul class=" list-unstyled"> 
+    <li> <img src="dark theme icon/moon.png" id="icon"></li>
+    <li> <a href="#"><i class="fa fa-search fa-2x"></i></a></li>
+    <li> <a href="#"><i class="fa fa-user fa-2x"></i></a></li>
+    <li> <a href="#"><i class=" icons fa fa-cart-plus fa-2x"></i></a> your bag</li>
+</ul>
+</div><!--/login-->
+<div class="clear"></div>
+</div><!-- header-content-->
+    </div> <!-- container-->
+   </header> <!--/header-->
+   <!-- slider-section-->
+   <section class="slider">
+    <div class="container">
+        <img class="img-father" src="imgpro1/main-banner-1-1600x700.jpg" alt="slider">
+    </div> <!--/container-->
+   </section>   <!--/ slider-section-->
+   <script>
+    let icon = document.getElementById("icon")
+    icon.onclick = function(){
+        if(icon.src.match("moon")){
+            document.body.classList.add('dark-theme')
+            icon.src ="dark theme icon/sun.png"
+        }else{
+            document.body.classList.remove('dark-theme')
+            icon.src ="dark theme icon/moon.png"
+    }}
+   </script>
+</body>
+</html>
